@@ -1,4 +1,4 @@
-#Jurassic Park homework
+# Jurassic Park homework
 
 John Hammond wants to be able to manage the dinosaurs at Jurassic Park. (uhoh)
 
@@ -19,7 +19,7 @@ should be able to add dinosaur
 should be able to remove all dinosaurs of a particular type
 should get all the dinosaurs with an offspring count of more than 2
 
-#Extension
+# Extension
 
 John Hammond wants to be able to calculate how many dinosaurs there are going to be at Jurassic Park on any given year after opening, taking into consideration the number of offspring each dinosaur has annually.
 
