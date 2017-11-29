@@ -22,19 +22,12 @@ Park.prototype = {
     }
     return dinosaurs;
   },
-  dinosInParkAfter1: function(){
-    noDinos = 0
-    for(dinos of this.enclosure){
-      noDinos += dinos.offspring;
-      noDinos += this.enclosure.length;
+  calculateDinosaurs: function(years) {
+    var totalDinos = 0;
+    for(var dino of this.enclosure){
+      totalDinos += (dino.offspring + 1) ** years;
     }
-    return noDinos;
-  },
-  dinosInParkAfter2: function(){
-    noDinos = this.dinosInParkAfter1();
-    noDinos *= 2;
-    noDinos -= 1;
-    return noDinos;
+    return totalDinos
   }
 }
 

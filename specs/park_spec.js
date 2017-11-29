@@ -32,16 +32,16 @@ describe("Park tests", function(){
   });
   it("should be able to calculate number of dinosaurs after year one, starting with 1 dinosaur", function(){
     park.addDino(dino1);
-    assert.strictEqual(park.dinosInParkAfter1(), 3)
+    assert.strictEqual(park.calculateDinosaurs(1), 3)
   });
   it("should be able to calculate number of dinosaurs after year two, starting with 1 dinosaur", function(){
     park.addDino(dino1);
-    assert.strictEqual(park.dinosInParkAfter2(), 5)
+    assert.strictEqual(park.calculateDinosaurs(2), 9)
   });
   it("should be able to calculate number of dinosaurs after year two, starting with 2 dinosaurs", function(){
     park.addDino(dino1);
     park.addDino(dino2);
-    assert.strictEqual(park.dinosInParkAfter2(), 14)
+    assert.strictEqual(park.calculateDinosaurs(2), 34)
   })
 
 })
